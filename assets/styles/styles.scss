@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// END OF RESET!
+$sidebar: #5d797a;
+$white: #fbfbfb;
+$hover: #7cc3c5;
+$black: #1b2424;
+
+.container {
+  // width: 100%;
+  height: 750px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: $white;
+
+}
+
+.sidebar{
+  display: inline-block;
+  //position: fixed;
+  width: 390px;
+  height: 100%;
+  background-color: $sidebar;
+  // background-image: linear-gradient($sidebar, #8da1a1);
+  color: $white;
+  h2{
+    color: $white;
+    font-size: 12em;
+    letter-spacing: -39px;
+    font-family: 'Cormorant Garamond', serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid $white;
+    .n:hover{
+      color: $hover;
+    }
+    .r:hover{
+      color: $hover;
+      z-index: 2;
+    }
+    .a:hover{
+      color: $hover;
+      z-index: 3;
+    }
+  }
+  .myInfo{
+    margin-top: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    // text-align: center;
+    .occupation{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    li{
+      margin-top: 5px;
+      a{
+        text-decoration: none;
+        cursor: crosshair;
+        color: $white;
+      }a:hover{
+        color: $hover;
+        text-decoration: underline;
+      }
+    }
+    .name{
+      font-size: 1.50em;
+      margin-left: 35px;
+    }
+    .about{
+      margin-top: 10px;
+      padding-top: 15px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.5em;
+      border-bottom: 1px solid $white;
+      margin-bottom: 10px;
+      i{
+        margin-left: 80px;
+      }
+    }
+    .about:hover{
+      color: $hover;
+      cursor: crosshair;
+      border-bottom: 1px solid $hover;
+
+    }
+    .myWork{
+      margin-top: 10px;
+      padding-top: 15px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.5em;
+      border-bottom: 1px solid $white;
+      margin-bottom: 10px;
+      i{
+        margin-left: 100px;
+      }
+        }
+        .myWork:hover{
+            color: $hover;
+            cursor: crosshair;
+            border-bottom: 1px solid $hover;
+
+          }
+    .contact{
+      margin-top: 10px;
+      padding-top: 15px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      //border-top: 1px solid $white;
+      .contactMe{
+        font-size: 1.5em;
+        border-bottom: 1px solid $white;
+        margin-bottom: 10px;
+        i{
+          margin-left: 45px;
+        }
+      }
+      .contactMe:hover{
+          color: $hover;
+          cursor: crosshair;
+          border-bottom: 1px solid $hover;
+
+        }
+      .contactLinks{
+        letter-spacing: 35px;
+        border: none;
+        i:hover{
+          color: $hover;
+          cursor: crosshair;
+          // text-decoration: underline;
+        }
+      }
+    }
+    .links{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+.mainContent{
+  position: absolute;;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 35px;
+  width: 850px;
+  height: 750px;
+  font-size: 1.75em;
+  font-family: 'Cormorant Garamond', serif;
+  color: $black;
+  // border: 1px solid $black;
+  overflow: scroll;
+  img{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 430px;
+    width: auto;
+  }
+  p{
+    text-align: center;
+    margin: 10px;
+    font-size: 1em;
+
+  }
+  li{
+    margin-left: 50px;
+    list-style: circle;
+    font-size: .75em;
+    //margin-bottom: 10px;
+  }
+  .myWorkStuff{
+    border-bottom: 1px solid $hover;
+    padding-bottom: 10px;
+    margin-left: 22px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 1.5em;
+  }
+  .projects{
+    height: 225px;
+    width: 800px;
+    // border: 1px solid $hover;
+    margin-left: 20px;
+    margin-bottom: 15px;
+      .projectImg{
+        display: inline-block;
+        height: 225px;
+        width: 225px;
+        //border-right: 1px solid $hover;
+        img{
+          height: 100%;
+          width:100%;
+        }
+      }
+    .projectInfo{
+      display: inline-block;
+      vertical-align: top;
+      width: 550px;
+      //font-size: .75em;
+      h2{
+        font-size: 1.5em;
+        text-align: center;
+      }
+      p{
+        font-size: .75em;
+        margin-top: 2px;
+        text-align: left;
+      }
+      ul{
+        display: inline-block;
+        width: 220px;
+        li{
+          font-size: .75em;
+        }
+      }
+
+    }
+    .rightSide{
+      display: inline-block;
+      width: 220px;
+      vertical-align: top;
+      a{
+        //display: inline-block;
+        text-decoration: none;
+        vertical-align: top;
+        cursor: crosshair;
+        color: $black;
+      }a:hover{
+        color: $hover;
+        text-decoration: underline;
+      }
+    }
+  }
+  .contactInfo{
+    width: 800px;
+    // text-align: center;
+    margin-left: 22px;
+    font-size: 1.25em;
+    margin-top: 35px;
+    margin-bottom: 600px;
+      h2{
+      text-align: center;
+      font-size: 1.25em;
+      border-bottom: 1px solid $hover;
+
+    }
+    p{
+      text-align: left;
+      font-size: .66em;
+      a{
+        text-decoration: none;
+        color: $black;
+      }
+      i{
+        color: $hover;
+        margin-right: 12px;
+      }
+
+    }
+  }
+}
